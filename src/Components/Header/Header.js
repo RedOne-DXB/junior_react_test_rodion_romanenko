@@ -1,4 +1,4 @@
-import HeaderNavTabs from './HeaderNavTabs';
+import HeaderNavTabs from '../HeaderNavTabs/HeaderNavTabs';
 
 function Header({ children }) {
   return (

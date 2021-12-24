@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
+import s from './Product.module.css';
 
 const Product = ({ url, title, price }) => {
   return (
-    <div>
-      <div>
+    <div className={s.container}>
+      <div className={s.imageWrapper}>
         <img src={url} alt={title} width="320" />
       </div>
-      <div>{title}</div>
-      <div>{price}</div>
+      <div className={s.title}>{title}</div>
+      <div className={s.price}>{price}</div>
     </div>
   );
 };

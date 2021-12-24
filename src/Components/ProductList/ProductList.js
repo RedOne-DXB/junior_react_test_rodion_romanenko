@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
-import Product from './Product';
+import Product from '../Product/Product';
+import s from './ProductList.module.css';
 
 function ProductList({ products }) {
   return (
-    <ul>
+    <ul className={s.list}>
       {products.map(product => (
-        <li key={product.id}>
+        <li className={s.listItem} key={product.id}>
           <Product
             url={product.url}
             title={product.title}
