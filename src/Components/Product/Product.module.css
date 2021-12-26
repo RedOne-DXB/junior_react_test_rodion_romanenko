@@ -1,10 +1,15 @@
 .container {
-  padding: 16px;
-  margin: 0 0 103px 0;
+  padding: 20px;
+  margin: 0 20px 103px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   /* align-items: center; */
+  box-shadow: 0px 4px 35px 0px #a8acb030;
+}
+
+.container:last-child {
+  /* margin: 0 20px; */
 }
 
 .imageWrapper {
@@ -31,3 +36,8 @@
   composes: title;
   font-weight: 500;
 }
+
+/* .content {
+  padding: 0;
+  flex: 1 1 auto;
+} */

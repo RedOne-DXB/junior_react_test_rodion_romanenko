@@ -4,11 +4,13 @@ import s from './Product.module.css';
 const Product = ({ url, title, price }) => {
   return (
     <div className={s.container}>
-      <div className={s.imageWrapper}>
+      <a href="./public/index.html" className={s.imageWrapper}>
         <img src={url} alt={title} width="320" />
+      </a>
+      <div className={s.content}>
+        <div className={s.title}>{title}</div>
+        <div className={s.price}>{price}</div>
       </div>
-      <div className={s.title}>{title}</div>
-      <div className={s.price}>{price}</div>
     </div>
   );
 };
