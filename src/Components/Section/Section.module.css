@@ -1,0 +1,10 @@
+.categorySection {
+  padding-top: 80px;
+  padding-bottom: 191px;
+}
+
+.categoryTitle {
+  margin-bottom: 103px;
+  font-size: 42px;
+  line-height: calc(67.2 / 42 * 100%);
+}

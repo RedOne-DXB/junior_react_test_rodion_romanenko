@@ -2,9 +2,19 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0 -30px;
 }
 
 .listItem {
   flex-basis: calc((100% - 15px * 6) / 3);
+  margin: 0px 40px 51px 0px;
+  min-height: 444px;
+  max-width: 386px;
+}
+
+.listItem:not(:nth-child(-n + 3)) {
+  margin-top: 51px;
+}
+
+.listItem:nth-child(3n + 3) {
+  margin-right: 0;
 }
