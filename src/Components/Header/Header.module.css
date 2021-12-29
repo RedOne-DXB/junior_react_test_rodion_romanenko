@@ -1,0 +1,12 @@
+.tabContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  padding: 24px 0 17px 0;
+}
+
+.buttonWrapper {
+  display: flex;
+}
