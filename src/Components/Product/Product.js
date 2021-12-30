@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import s from './Product.module.css';
+// import CartButton from './CartButton';
 import CartImage from './Image';
+// import CartButton from './Image';
 
 const Product = ({ url, title, price }) => {
   return (
@@ -9,6 +11,7 @@ const Product = ({ url, title, price }) => {
         <img src={url} alt={title} width="320" />
       </a>
       <CartImage />
+      {/* <CartButton /> */}
       <div className={s.content}>
         <div className={s.title}>{title}</div>
         <div className={s.price}>{price}</div>
