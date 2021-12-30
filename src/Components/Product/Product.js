@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import s from './Product.module.css';
+import CartImage from './Image';
 
 const Product = ({ url, title, price }) => {
   return (
@@ -7,6 +8,7 @@ const Product = ({ url, title, price }) => {
       <a href="./public/index.html" className={s.imageWrapper}>
         <img src={url} alt={title} width="320" />
       </a>
+      <CartImage />
       <div className={s.content}>
         <div className={s.title}>{title}</div>
         <div className={s.price}>{price}</div>

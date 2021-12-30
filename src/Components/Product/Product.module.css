@@ -6,6 +6,7 @@
   justify-content: center;
   height: 100%;
   box-shadow: 0px 4px 35px 0px #a8acb030;
+  position: relative;
 }
 
 .imageWrapper {
@@ -30,6 +31,25 @@
   font-weight: 500;
 }
 
+.cartButton {
+  background-color: #5ece7b;
+  align-self: flex-end;
+  justify-content: center;
+  padding: 14px 14px;
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  bottom: 56px;
+  right: 31px;
+  box-shadow: 0px 4px 11px rgba(29, 31, 34, 0.1);
+  border-radius: 50%;
+}
+
+.cartButton img {
+  display: block;
+  height: 24px;
+  width: 24px;
+}
 /* .content {
   padding: 0;
   flex: 1 1 auto;
