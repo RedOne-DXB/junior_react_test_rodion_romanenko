@@ -1,4 +1,6 @@
 import HeaderNavTabs from '../HeaderNavTabs/HeaderNavTabs';
+import { LogoImage, CartImage, CurrencyImage } from './Image';
+
 import s from './Header.module.css';
 
 function Header({ children }) {
@@ -6,9 +8,10 @@ function Header({ children }) {
     <header className={s.header}>
       <div className={s.tabContainer}>
         <HeaderNavTabs />
+        <LogoImage />
         <div className={s.buttonWrapper}>
-          <div>Currency switch</div>
-          <a href="././public/index.html">Basket Button</a>
+          <CurrencyImage />
+          <CartImage />
         </div>
       </div>
     </header>

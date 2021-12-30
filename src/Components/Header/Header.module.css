@@ -1,6 +1,7 @@
 .tabContainer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header {
@@ -11,4 +12,10 @@
 
 .buttonWrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartButton {
+  margin-left: 22px;
 }
