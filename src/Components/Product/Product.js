@@ -11,7 +11,6 @@ const Product = ({ url, title, price }) => {
         <img src={url} alt={title} width="320" />
       </a>
       <CartImage />
-      {/* <CartButton /> */}
       <div className={s.content}>
         <div className={s.title}>{title}</div>
         <div className={s.price}>{price}</div>

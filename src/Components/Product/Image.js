@@ -16,23 +16,23 @@ export default CartImage;
 // import s from './Product.module.css';
 // import img1 from './images/emptyCart.svg';
 
-// class CartButton extends Component {
+// class CartImage extends Component {
 
 //     state = {
 //         visible: false,
 //     }
 
 //     show = () => {
-//         this.setState({visible: true});
+//         this.setState({visible: !this.state.visible});
 //     }
 
 //     render() {
 //         return (
-//             <a href="../../../public/index.html" className={s.cartButton} onMouseOver={this.show}>
+//             <a href="../../../public/index.html" className={s.cartButton} onMouseEnter={this.show}>
 //       <img src={img1} alt="cart" />
 //     </a>
 //         )
 //     }
 // }
 
-// export default CartButton;
+// export default CartImage;
