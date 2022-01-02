@@ -41,6 +41,7 @@ const Product = ({ url, title, price }) => {
   const [isShown, setIsShown] = useState(false);
   const toggleHover = () => setIsShown(!isShown);
   const containerClass = isShown ? `${s.containerHovered}` : `${s.container}`;
+
   return (
     <div
       className={containerClass}
