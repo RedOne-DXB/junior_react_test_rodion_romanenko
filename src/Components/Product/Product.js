@@ -39,11 +39,13 @@ import CartImage from './Image';
 
 const Product = ({ url, title, price }) => {
   const [isShown, setIsShown] = useState(false);
+  const toggleHover = () => setIsShown(!isShown);
+  const containerClass = isShown ? `${s.containerHovered}` : `${s.container}`;
   return (
     <div
-      className={s.container}
-      onMouseEnter={() => setIsShown(true)}
-      onMouseLeave={() => setIsShown(false)}
+      className={containerClass}
+      onMouseEnter={toggleHover}
+      onMouseLeave={toggleHover}
     >
       <a href="./public/index.html" className={s.imageWrapper}>
         <img src={url} alt={title} width="320" />

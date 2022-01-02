@@ -5,8 +5,12 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  box-shadow: 0px 4px 35px 0px #a8acb030;
   position: relative;
+}
+
+.containerHovered {
+  composes: container;
+  box-shadow: 0px 4px 35px 0px #a8acb030;
 }
 
 .imageWrapper {
