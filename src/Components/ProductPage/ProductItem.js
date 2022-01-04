@@ -2,13 +2,11 @@ import React, { Fragment } from 'react';
 import s from './ProductPage.module.css';
 // import productItems from '../../productItems.json';
 
-// let products = productItems.map(product => console.log(product))
-
-function ProductItem({ ...products }) {
+function ProductItem({ products }) {
   return (
     <Fragment>
       <div className={s.imageBody}>
-        {/* <img src={product.url} alt={product.title}/> */}
+        <img src={products.url} alt={products.title} />
       </div>
       <div className={s.contentBody}>
         <h2>Apollo</h2>
@@ -21,7 +19,7 @@ function ProductItem({ ...products }) {
           <div>L</div>
         </div>
         <h4>Price:</h4>
-        {/* <p>{price}</p> */}
+        <p>{products.price}</p>
         <button>Add to cart</button>
         <p>
           Find stunning women's cocktail dresses and party dresses. Stand out in
@@ -30,9 +28,6 @@ function ProductItem({ ...products }) {
         </p>
       </div>
     </Fragment>
-    // products.map(product => (
-
-    // ))
   );
 }
 
