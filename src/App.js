@@ -6,15 +6,21 @@ import Section from './Components/Section/Section';
 import Header from './Components/Header/Header';
 import Container from './Components/Container/Container';
 import ProductPage from './Components/ProductPage/ProductPage';
+import Modal from './Components/Modal/Modal';
+import { Component } from 'react/cjs/react.production.min';
 
-export default function App() {
-  return (
-    <Container>
-      <Header />
-      <Section title="Category name">
-        {/* <ProductList products={productItems} /> */}
-        <ProductPage />
-      </Section>
-    </Container>
-  );
+class App extends Component {
+  render() {
+    return (
+      <Container>
+        <Header />
+        <Section title="Category name">
+          {/* <ProductList products={productItems} /> */}
+          <ProductPage />
+        </Section>
+      </Container>
+    );
+  }
 }
+
+export default App;
