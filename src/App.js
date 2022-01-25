@@ -1,11 +1,11 @@
-// import React from "react";
+import React from 'react';
 // import Product from "./Components/Product";
-// import ProductList from './Components/ProductList/ProductList';
-// import productItems from './productItems.json';
+import ProductList from './Components/ProductList/ProductList';
+import productItems from './productItems.json';
 import Section from './Components/Section/Section';
 import Header from './Components/Header/Header';
 import Container from './Components/Container/Container';
-import ProductPage from './Components/ProductPage/ProductPage';
+// import ProductPage from './Components/ProductPage/ProductPage';
 import Modal from './Components/Modal/Modal';
 import { Component } from 'react/cjs/react.production.min';
 import IconButton from './IconButton/IconButton';
@@ -40,8 +40,8 @@ class App extends Component {
           </IconButton>
         </Header>
         <Section title="Category name">
-          {/* <ProductList products={productItems} /> */}
-          <ProductPage />
+          <ProductList products={productItems} />
+          {/* <ProductPage /> */}
         </Section>
         {showModal && <Modal />}
       </Container>
