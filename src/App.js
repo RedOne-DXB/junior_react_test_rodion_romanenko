@@ -7,6 +7,7 @@ import Header from './Components/Header/Header';
 import Container from './Components/Container/Container';
 // import ProductPage from './Components/ProductPage/ProductPage';
 import Modal from './Components/Modal/Modal';
+import ModalCart from './Components/Modal/ModalCart';
 import { Component } from 'react/cjs/react.production.min';
 import IconButton from './IconButton/IconButton';
 import { ReactComponent as CartIcon } from './icons/cart.svg';
@@ -43,7 +44,11 @@ class App extends Component {
           <ProductList products={productItems} />
           {/* <ProductPage /> */}
         </Section>
-        {showModal && <Modal />}
+        {showModal && (
+          <Modal onClose={this.toggleModal}>
+            <ModalCart />
+          </Modal>
+        )}
       </Container>
     );
   }

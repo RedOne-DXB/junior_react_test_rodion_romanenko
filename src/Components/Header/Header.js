@@ -8,20 +8,12 @@ import s from './Header.module.css';
 // import { useState } from 'react';
 
 function Header({ children }) {
-  // const [isShown, setIsShown] = useState(false);
-  // const toggleHover = () => setIsShown(!isShown);
-
   return (
     <header className={s.header}>
       <div className={s.tabContainer}>
         <HeaderNavTabs />
         <LogoImage />
-        <div className={s.buttonWrapper}>
-          {/* <CurrencyImage /> */}
-          {children}
-          {/* <CartImage /> */}
-          {/* {toggleHover && <Modal />} */}
-        </div>
+        <div className={s.buttonWrapper}>{children}</div>
       </div>
     </header>
   );
