@@ -1,15 +1,15 @@
 // import React, {useState} from 'react';
 import HeaderNavTabs from '../HeaderNavTabs/HeaderNavTabs';
 import { LogoImage, CartImage, CurrencyImage } from './Image';
-import Modal from '../Modal/Modal';
+// import Modal from '../Modal/Modal';
 // import App from '../../App';
 
 import s from './Header.module.css';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 function Header({ children }) {
-  const [isShown, setIsShown] = useState(false);
-  const toggleHover = () => setIsShown(!isShown);
+  // const [isShown, setIsShown] = useState(false);
+  // const toggleHover = () => setIsShown(!isShown);
 
   return (
     <header className={s.header}>
@@ -17,9 +17,10 @@ function Header({ children }) {
         <HeaderNavTabs />
         <LogoImage />
         <div className={s.buttonWrapper}>
-          <CurrencyImage />
-          <CartImage onClick={toggleHover} />
-          {toggleHover && <Modal />}
+          {/* <CurrencyImage /> */}
+          {children}
+          {/* <CartImage /> */}
+          {/* {toggleHover && <Modal />} */}
         </div>
       </div>
     </header>

@@ -1,0 +1,11 @@
+.button {
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  flex: 0 0 20px;
+  height: 20px;
+}
+
+.button:not(:first-child) {
+  margin-left: 22px;
+}

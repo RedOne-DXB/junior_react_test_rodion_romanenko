@@ -7,7 +7,7 @@ import s from './Header.module.css';
 function LogoImage() {
   return (
     <div>
-      <img src={img1} alt="currency switch" />
+      <img src={img1} alt="logo" />
     </div>
   );
 }
