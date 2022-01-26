@@ -9,13 +9,13 @@
 
 .content {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  bottom: -94px;
+  right: -98px;
   transform: translate(-50%, -50%);
-  min-height: 300px;
-  max-width: 600px;
+  min-height: 380px;
+  max-width: 325px;
   width: 100%;
-  padding: 12px;
+  padding: 16px 16px 20px 16px;
   background-color: #fff;
   border-radius: 3px;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
@@ -26,23 +26,26 @@
 .column {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: 26px 137px 137px 28px 43px;
   max-width: 325px;
-  padding: 0 16px;
+  align-items: center;
 }
 .item {
 }
 .itemHeader {
   display: flex;
   align-items: center;
+  margin-bottom: 23px;
 }
 .itemProduct {
   display: grid;
   grid-template-columns: 136px 52px 105px;
+  margin-bottom: 41px;
 }
 .itemTotal {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 35px;
 }
 .itemButtons {
   display: flex;
@@ -60,6 +63,10 @@
 }
 /* Second column and Third column */
 .gridColumn {
+  display: grid;
+  align-items: center;
+  /* grid-template-rows: 1fr 24px 105px; */
+  /* align-content: center; */
 }
 .columnTitle {
   font-weight: 300;
@@ -84,14 +91,43 @@
   font-size: 14px;
   font-weight: 400;
   line-height: calc(22.4 / 14 * 100%);
+  border: 1px solid #1d1f22;
+  background-color: inherit;
 }
 .columnIncrement {
+  display: flex;
+  flex: 0 0 24px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  height: 24px;
+  font-size: 30px;
+  font-weight: 300;
+  border: 1px solid #1d1f22;
+  background-color: inherit;
 }
 .columnCount {
+  display: flex;
+  flex: 0 0 24px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  line-height: calc(25.6 / 16 * 100%);
 }
 .columnDecrement {
+  composes: columnIncrement;
+  padding: 8px 8px 12px;
 }
 .columnImage {
+  /* position: relative; */
+}
+.columnImage img {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }
 /* Fourth column */
 .itemTotalAmount {
@@ -99,6 +135,20 @@
 }
 /* Fifth column */
 .viewBag {
+  display: flex;
+  flex: 0 0 140px;
+  height: 43px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #1d1f22;
+  background-color: #ffffff;
 }
 .checkOut {
+  composes: viewBag;
+  color: #ffffff;
+  background-color: #5ece7b;
+  border: 1px solid transparent;
 }

@@ -46,7 +46,7 @@ class App extends Component {
         </Section>
         {showModal && (
           <Modal onClose={this.toggleModal}>
-            <ModalCart />
+            <ModalCart products={productItems} />
           </Modal>
         )}
       </Container>

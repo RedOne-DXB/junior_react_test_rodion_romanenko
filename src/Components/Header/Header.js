@@ -1,11 +1,7 @@
-// import React, {useState} from 'react';
 import HeaderNavTabs from '../HeaderNavTabs/HeaderNavTabs';
-import { LogoImage, CartImage, CurrencyImage } from './Image';
-// import Modal from '../Modal/Modal';
-// import App from '../../App';
+import { LogoImage } from './Image';
 
 import s from './Header.module.css';
-// import { useState } from 'react';
 
 function Header({ children }) {
   return (
@@ -20,13 +16,3 @@ function Header({ children }) {
 }
 
 export default Header;
-
-// state = {
-//   showModal: false
-// }
-
-// toggleModal = () => {
-//   this.setState(({ showModal }) => ({
-//     showModal: !showModal,
-//   }));
-// };

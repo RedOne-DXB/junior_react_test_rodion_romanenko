@@ -1,6 +1,7 @@
 import s from './Modal.module.css';
+import img from './images/sweater.jpg';
 
-function ModalCart() {
+function ModalCart({ products }) {
   return (
     <div className={s.column}>
       <div className={s.itemHeader}>
@@ -22,12 +23,18 @@ function ModalCart() {
           </div>
         </div>
         <div className={s.gridColumn}>
-          <div className={s.columnIncrement}>+</div>
+          <button type="button" className={s.columnIncrement}>
+            +
+          </button>
           <div className={s.columnCount}>1</div>
-          <div className={s.columnDecrement}>-</div>
+          <button type="button" className={s.columnDecrement}>
+            -
+          </button>
         </div>
         <div className={s.gridColumn}>
-          <div className={s.columnImage}>Imagine there's HUI</div>
+          <div className={s.columnImage}>
+            <img src={img} alt="item"></img>
+          </div>
         </div>
       </div>
       <div className={s.itemProduct}>
@@ -45,12 +52,18 @@ function ModalCart() {
           </div>
         </div>
         <div className={s.gridColumn}>
-          <div className={s.columnIncrement}>+</div>
+          <button type="button" className={s.columnIncrement}>
+            +
+          </button>
           <div className={s.columnCount}>1</div>
-          <div className={s.columnDecrement}>-</div>
+          <button type="button" className={s.columnDecrement}>
+            -
+          </button>
         </div>
         <div className={s.gridColumn}>
-          <div className={s.columnImage}>Imagine there's HUI</div>
+          <div className={s.columnImage}>
+            <img src={img} alt="item"></img>
+          </div>
         </div>
       </div>
       <div className={s.itemTotal}>
